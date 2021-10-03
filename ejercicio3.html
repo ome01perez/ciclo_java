@@ -28,6 +28,32 @@
            
         </ul>
     </nav>
-         
+    <form action="#">
+        <h1>digite un numero</h1>
+    <input type="number" id="numero" placeholder="digite su numero"/>
+    <button onclick="calcular();">calcular</button>
+    <div id="resultado"></div>
+     <div id="resultado1"></div>  
+    </form>       
 </body>
 </html>
+<script>
+function calcular(){
+    var num= parseInt(document.getElementById("numero").value);
+    var par= 0;
+    var impar= 0;
+
+    for(var i=1; i<=  num; i++){
+        if(i%2 ==0){
+            par += i;
+            document.getElementById("resultado").innerHTML=par;
+
+        }
+        else {
+            impar+=i;
+            document.getElementById("resultado1").innerHTML=impar;
+        }
+    }
+}
+
+</script>
