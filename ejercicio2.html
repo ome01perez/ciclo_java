@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="icons/all.css">
+    <script src="https://kit.fontawesome.com/aa74497e8b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css/ejercicio2.css">
+</head>
+<body>
+    <h1>ejercicio 2</h1>
+    <label class="icono-menu" onclick="mostrarmenu()"><a href="#"><i class="fas fa-bars"></i></a></label>
+    <nav id="menu-principal">
+    
+        <ul class="menu">
+            <li><a href="index.html"> inicio</a></li>
+            <li><a href="ejercicio1.html"><i ></i> ejercicio 1</a></li>
+            <li><a href="ejercicio2.html"><i ></i> ejercicio 2</a></li>
+            <li><a href="ejercicio3.html"><i ></i> ejercicio 3</a></li>
+            <li><a href="ejercicio4.html"><i ></i> ejercicio 4</a></li>
+           
+        </ul>
+    </nav>
+    
+
+    <select  name="" id="numero" onchange="saludar()">
+<option  value="1">1</option>
+<option  value="2">2</option>
+<option  value="3">3</option>
+<option  value="4">4</option>
+<option  value="5">5</option>
+<option  value="6">6</option>
+<option value="7">7</option>
+<option  value="8">8</option>
+<option  value="9">9</option>
+<option  value="10">10</option>
+
+
+
+
+
+    </select>
+
+    <div id="resultado"></div>
+</body>
+</html>
+<script>
+
+    function saludar(){
+        var numero=parseInt(document.getElementById("numero").value);
+        var multiplicacion="";
+
+   
+  for(var i=1 ; i<=100; i++){
+
+  multiplicacion +="<h1>"+numero+"*"+i+" ="+ numero * i + "</h1>"
+  }
+  document.getElementById("resultado").innerHTML=multiplicacion;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

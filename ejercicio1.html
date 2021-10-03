@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css/ejercicio1.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="icons/all.css">
+    <script src="https://kit.fontawesome.com/aa74497e8b.js" crossorigin="anonymous"></script>
+    <title>ejercicio 1</title>
+    
+    
+
+</head>
+<body>
+    <h1>ejercicio 1</h1>
+    <label class="icono-menu" onclick="mostrarmenu()"><a href="#"><i class="fas fa-bars"></i></a></label>
+    <nav id="menu-principal">
+    
+        <ul class="menu">
+            <li><a href="index.html"> inicio</a></li>
+            <li><a href="ejercicio1.html"><i ></i> ejercicio 1</a></li>
+            <li><a href="ejercicio2.html"><i ></i> ejercicio 2</a></li>
+            <li><a href="ejercicio3.html"><i ></i> ejercicio 3</a></li>
+            <li><a href="ejercicio4.html"><i ></i> ejercicio 4</a></li>
+           
+        </ul>
+    </nav>
+
+    <p>multiplo de 3 entre los numero 1 al 100</p>
+    <br>
+    <br>
+    <br>
+    <div class="par">
+    <button class="par" onclick="calcular();">resultado</button>
+         <div id="calcular"> </div>
+</body>
+</html>
+
+<script>
+ 
+    function calcular(){
+
+       var resultado=0;
+
+       for( var i =0;  i <= 100;  i++ ){
+           var resultado = resultado +i;
+
+          if(i % 3== 0){
+           
+           
+           document.write("<h1> multiplo de 3= "+i+"</h1>" );
+         
+              
+          }
+       
+          
+
+       }
+   }
+   </script>
